@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    font-family: 'Roboto', sans-serif; /* Exemplo de fonte do Google Fonts */
+    background-color: #3498db; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Estilo da coluna esquerda (texto) */
+.left-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.left-column textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    color: #fff;
+}
+
+/* Estilo da coluna direita (área de apresentação) */
+.right-column {
+    flex: 1;
+}
+
+.right-column #resultado {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.right-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2ecc71; /* Verde */
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Estilizar e animar o cursor */
+textarea, button {
+    transition: all 0.3s ease;
+}
+
+textarea:focus, button:focus {
+    outline: none;
+    border-color: #fff; /* Cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra ao focar */
+}

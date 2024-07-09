@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Links para fontes do Google Fonts podem ser incluídos aqui -->
+    <!-- Exemplo: <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <header>
+        <!-- Cabeçalho da página, como logo, menu, etc. -->
+        <h1>Decodificador de texto</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Container da coluna esquerda -->
+        <div class="left-column">
+            <h2>Criptografar</h2>
+            <textarea id="texto-criptografar" rows="4" placeholder="Digite o texto para criptografar"></textarea>
+            <button id="btn-criptografar">Criptografar</button>
+
+            <h2>Descriptografar</h2>
+            <textarea id="texto-descriptografar" rows="4" placeholder="Digite o texto para descriptografar"></textarea>
+            <button id="btn-descriptografar">Descriptografar</button>
+        </div>
+
+        <!-- Container da coluna direita -->
+        <div class="right-column">
+            <h2>Resultado</h2>
+            <div id="resultado">
+                <img src="https://via.placeholder.com/400x300" alt="Exemplo de imagem">
+            </div>
+            <button onclick="copiarTextoResultado()">Copiar Resultado</button>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Rodapé da página -->
+        <p>&copy; 2024 Wellington - Projeto Decodificador de texto</p>
+    </footer>
+    
+    <!-- Referência para o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
